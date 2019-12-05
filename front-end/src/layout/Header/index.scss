@@ -1,0 +1,94 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 100%;
+  float: left;
+  background: white;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.logo-link {
+  color: #000000;
+  text-decoration: 'none';
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-content {
+  padding: 0px 32px;
+}
+
+.selected-seperator {
+  width: 3px;
+  height: 24px;
+  background-color: #a9814a;
+}
+
+// .gnb-sign-in-button {
+//   width: 94px;
+//   height: 35px;
+//   background: transparent;
+//   border-color: #a9814a;
+// }
+
+// .gnb-sign-in-text {
+//   width: 94px;
+//   height: 35px;
+//   font-family: Helvetica;
+//   font-size: 16px;
+//   font-weight: normal;
+//   font-style: normal;
+//   font-stretch: normal;
+//   line-height: normal;
+//   letter-spacing: normal;
+//   text-align: center;
+//   color: #a9814a;
+// }
+
+.gnb-sign-in-button {
+  width: 94px;
+  height: 35px;
+  background: transparent;
+  border-color: white;
+}
+
+.gnb-sign-in-text {
+  width: 94px;
+  height: 35px;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: white;
+}
+
+.gnb-lang {
+  width: 69px;
+  height: 21px;
+  opacity: 0.5;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+}

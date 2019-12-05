@@ -1,0 +1,133 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    type: org.apache.commons.dbcp2.BasicDataSource
+    url: jdbc:mysql://nftbay.coiv2phckwuz.ap-northeast-2.rds.amazonaws.com:3306/nftbay-dev
+    username: nftbay
+    password: Devtooth!!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dbcp2:
+      initial-size: 2
+      max-total: 2
+      max-idle: 2
+      min-idle: 2
+      max-wait-millis: 10000
+      validation-query: SELECT 1
+      test-on-borrow: true
+      test-while-idle: true
+      time-between-eviction-runs-millis: 300000
+      num-tests-per-eviction-run: 6
+      min-evictable-idle-time-millis: -1
+      pool-prepared-statements: true
+      max-open-prepared-statements: 50
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      use-new-id-generator-mappings: false
+logging:
+  config: classpath:logback-dev.xml
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type: TRACE
+    org.hibernate.stat: DEBUG
+    org.hibernate.type.BasicTypeRegistry: WARN
+spring.jackson.serialization.FAIL_ON_EMPTY_BEANS: false
+nodeos:
+  chainId: aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906
+  sync_start_block_num: 17998752
+  only_irreversible: false
+  sync_host_list: http://user-api.eoseoul.io, http://eos-api-lb-507360006.ap-northeast-2.elb.amazonaws.com, http://rpc.eosys.io, http://eos.greymass.com, http://api.eosnewyork.io
+  parallel_get_block_num_size: 10
+  account_name:
+    unlimited_tower_contract: asdf
+    nft_contract: sfddfd
+    nft_exchange_contract: asdf
+  table:
+    uts_table: utstokens
+    utm_table: utmtokens
+    uti_table: tuitokens
+    uts_game_table: tservant
+    utm_game_table: tmonster
+    uti_game_table: tequipments
+
+---
+spring:
+  profiles: dev
+  datasource:
+    type: org.apache.commons.dbcp2.BasicDataSource
+    url: jdbc:mysql://nftbay.coiv2phckwuz.ap-northeast-2.rds.amazonaws.com:3306/nftbay-dev
+    username: nftbay
+    password: Devtooth!!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dbcp2:
+      initial-size: 2
+      max-total: 2
+      max-idle: 2
+      min-idle: 2
+    jpa:
+      generate-ddl: false
+      show-sql: true
+      hibernate:
+        use-new-id-generator-mappings: false
+nodeos:
+  chainId: e70aaab8997e1dfce58fbfac80cbbb8fecec7b99cf982a9444273cbc64c41473
+  sync_start_block_num: 18199126
+  only_irreversible: false
+  sync_host_list: http://junglehistory.cryptolions.io:18888, http://jungle2.cryptolions.io, http://145.239.133.201:8888
+  parallel_get_block_num_size: 10
+  account_name:
+    unlimited_tower_contract: unlimitedmas
+    nft_contract: epochchasert
+    nft_exchange_contract: epochchasert
+slack:
+  url: https://hooks.slack.com
+  service_id: TCW8VCMSP
+  monitoring_channel: BHULMSCLF
+  token: y9inK6h51NDlJj32U9hZJ3DM
+  prefix: junglenet
+
+---
+
+
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:mysql://nftbay.cjuco6iu2dc0.ap-southeast-1.rds.amazonaws.com:3306/nftbay
+    username: nftbay
+    password: Devtooth!!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dbcp2:
+      initial-size: 15
+      max-total: 15
+      max-idle: 15
+      min-idle: 15
+  jpa:
+    generate-ddl: false
+    show-sql: false
+    hibernate:
+      use-new-id-generator-mappings: false
+logging:
+  config: classpath:logback-prod.xml
+  file: nftbay.log
+  level:
+    org.hibernate: ERROR
+    org.springframework: ERROR
+    com.nftbay: INFO
+nodeos:
+  chainId: aca376f206b8fc25a6ed44dbdc66547c36c6c33e3a119ffbeaef943642f0e906
+  sync_start_block_num: 18199126
+  only_irreversible: false
+  sync_host_list: http://mainnet.meet.one, http://mainnet.eosio.sg
+  parallel_get_block_num_size: 10
+  account_name:
+    unlimited_tower_contract: untowermain1
+    nft_contract: nftbaymain11
+    nft_exchange_contract: nftbaymain11
+slack:
+  url: https://hooks.slack.com
+  service_id: TCW8VCMSP
+  monitoring_channel: BHULMSCLF
+  token: y9inK6h51NDlJj32U9hZJ3DM
+  prefix: mainnet-prod

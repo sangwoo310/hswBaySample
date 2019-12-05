@@ -1,0 +1,109 @@
+.trade-search-bar-container {
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.trade-search-bar {
+  width: 900px;
+}
+
+.search-suggest-box {
+  width: 682px;
+  height: auto;
+  max-height: 217px;
+  z-index: 10;
+  position: absolute;
+  top: 217px;
+  box-shadow: 0 2px 11px 0 rgba(0, 0, 0, 0.37);
+  background-color: #ffffff;
+  overflow-x: scroll;
+  overflow-x: hidden;
+}
+
+.search-suggest-result {
+  width: 682px;
+  height: 40px;
+  background-color: #ffffff;
+  padding-top: 11px;
+  padding-left: 18px;
+
+  &:hover {
+    background-color: #f5f4f5;
+  }
+}
+
+.search-result-layout {
+  width: 1236px;
+  margin: auto;
+}
+
+.search-result-card {
+  padding: 20px;
+}
+
+.search-result-card-content {
+  height: 101px;
+  border-radius: 8px;
+  border: solid 1px gray;
+  padding: 30px 28px;
+  text-align: center;
+}
+
+.search-result-card-image {
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+
+.search-result-card-text {
+  width: 80%;
+  float: right;
+  margin: auto;
+  margin-top: 10px;
+  font-family: KoreanGD12-R;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.search-result-title {
+  height: 64px;
+  padding-top: 21px;
+  font-family: AppleSDGothicNeo;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #131516;
+  box-shadow: 6px 20px 25px -19px rgba(0, 0, 0, 0.37);
+  margin-bottom: 23px;
+}
+
+.trade-detail-container {
+  background-color: #f5f4f5;
+  padding: 40px;
+  width: 1240px;
+}
+
+.trade-detail-description-container {
+  flex: 1;
+}
+
+.detail-root-container {
+  margin: 40px;
+}
+
+.ant-table-row:hover {
+  cursor: pointer;
+}

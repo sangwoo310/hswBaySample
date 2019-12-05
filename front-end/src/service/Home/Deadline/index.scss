@@ -1,0 +1,18 @@
+.deadline-container {
+  display: flex;
+  flex-direction: column;
+  width: 648px;
+  height: auto;
+}
+
+.deadline-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  height: 64px;
+  border-bottom: 1px solid #e8e8e8;
+  z-index: 999;
+}

@@ -1,0 +1,15 @@
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-content {
+  padding: 0px 32px;
+}
+
+.menu-content-selected {
+  @extend menu-content;
+  font-weight: 200;
+}

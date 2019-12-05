@@ -1,0 +1,112 @@
+.footer-root {
+  height: 100%;
+  background: #172335;
+  color: #a9a9a9 !important;
+  padding-top: 33px;
+}
+
+.footer-row-base {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-row-container {
+  @extend .footer-row-base;
+  padding-top: 18px;
+}
+
+.footer-anchor-content {
+  margin: 12px;
+  // padding: 12px;
+  width: 29px;
+  height: 29px;
+  cursor: pointer;
+  alt: '';
+  background-size: contain;
+}
+
+.footer-twitter-img {
+  @extend .footer-anchor-content;
+
+  background-image: url('/img/twitter.png');
+
+  &:hover {
+    background-image: url('/img/twitter_hover.png');
+  }
+
+  &:active {
+    background-image: url('/img/twitter_click.png');
+  }
+}
+
+.footer-github-img {
+  @extend .footer-anchor-content;
+
+  background-image: url('/img/github.png');
+
+  &:hover {
+    background-image: url('/img/github_hover.png');
+  }
+
+  &:active {
+    background-image: url('/img/github_click.png');
+  }
+}
+
+.footer-mail-img {
+  @extend .footer-anchor-content;
+
+  background-image: url('/img/mail.png');
+
+  &:hover {
+    background-image: url('/img/mail_hover.png');
+  }
+
+  &:active {
+    background-image: url('/img/mail_click.png');
+  }
+}
+
+.footer-medium-img {
+  @extend .footer-anchor-content;
+
+  background-image: url('/img/medium.png');
+
+  &:hover {
+    background-image: url('/img/medium_hover.png');
+  }
+
+  &:active {
+    background-image: url('/img/medium_click.png');
+  }
+}
+
+.footer-telegram-img {
+  @extend .footer-anchor-content;
+
+  background-image: url('/img/telegram.png');
+
+  &:hover {
+    background-image: url('/img/telegram_hover.png');
+  }
+
+  &:active {
+    background-image: url('/img/telegram_click.png');
+  }
+}
+
+.footer-youtube-img {
+  @extend .footer-anchor-content;
+
+  background-image: url('/img/youtube.png');
+
+  &:hover {
+    background-image: url('/img/youtube_hover.png');
+  }
+
+  &:active {
+    background-image: url('/img/youtube_click.png');
+  }
+}

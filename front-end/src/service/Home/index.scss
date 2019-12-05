@@ -1,0 +1,38 @@
+.home-content-menu-container {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: center;
+}
+
+.home-content-subcontent-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home-content-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  z-index: 999;
+}
+
+.home-left-container {
+  width: 342px;
+  box-sizing: content-box !important;
+  border-right: 1px solid #c1c7c9;
+}
+
+.special-deal-menu {
+  @extend .home-content-menu;
+  width: 342px;
+}
+
+.new-product-menu {
+  @extend .home-content-menu;
+  width: 648px;
+}

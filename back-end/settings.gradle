@@ -1,0 +1,5 @@
+rootProject.name = 'nftbay'
+include 'api'
+include 'common'
+include 'batch'
+

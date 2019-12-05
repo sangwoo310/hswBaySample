@@ -1,0 +1,94 @@
+.token-summary {
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  border: 1px solid rgba(92, 92, 92, 0.71);
+  height: 160px;
+}
+
+.my-account {
+  .account-name {
+    width: 120px;
+    height: 25px;
+    float: left;
+    margin-left: 24px;
+    margin-top: 32px;
+    font-family: NotoSans;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  .staking {
+    width: 160px;
+    height: 25px;
+    float: left;
+    margin-top: 2px;
+    font-family: NotoSans;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #2c8d5e;
+  }
+
+  .staking-font {
+    color: #2c8d5e;
+    font-size: 18px;
+    float: right;
+    margin-right: 10px;
+  }
+
+  .line {
+    width: 857px;
+    height: 1px;
+    margin: auto;
+    margin-top: 118px;
+    border: solid 0.7px rgba(193, 199, 201, 0.5);
+  }
+
+  .resource {
+    width: 857px;
+    height: 24px;
+    margin: auto;
+    margin-top: 9px;
+  }
+
+  .resource-title {
+    width: 9%;
+    height: 24px;
+    float: left;
+    padding-left: 10px;
+    font-family: NotoSans;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #131516;
+  }
+
+  .resource-value {
+    width: 24.33%;
+    height: 24px;
+    float: left;
+    padding-right: 10px;
+    font-family: NotoSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #555f61;
+  }
+}

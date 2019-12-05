@@ -1,0 +1,22 @@
+.notice-container {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice-main-message {
+  width: 252px;
+  height: 41px;
+  font-family: Helvetica;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+  z-index: 999;
+}

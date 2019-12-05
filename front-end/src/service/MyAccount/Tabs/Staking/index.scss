@@ -1,0 +1,21 @@
+@import '../../../index.scss';
+
+.reg-auction-summary-container {
+  flex: 1;
+}
+
+.modal-auction-bottom-container {
+  @extend .horizontal-flex-container;
+
+  margin-top: 48px;
+}
+
+.starting-price-container {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.buyout-price-container {
+  flex: 1;
+  margin-left: 8px;
+}

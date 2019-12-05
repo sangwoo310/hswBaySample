@@ -1,0 +1,49 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.nftbay'
+version = '0.0.1-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_11
+targetCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+}
+
+bootJar {
+    enabled = true
+    mainClassName = 'com.nftbay.batch.BatchApplication'
+}
+
+dependencies {
+    compile project(':common')
+
+    compile('org.springframework.boot:spring-boot-starter')
+    compile('org.springframework.boot:spring-boot-starter-webflux')
+    compile('org.springframework.boot:spring-boot-starter-batch')
+
+    runtime('mysql:mysql-connector-java:8.0.13')
+    compile('org.apache.commons:commons-dbcp2:2.0')
+
+    compile('com.google.code.gson:gson:2.8.2')
+    compile('com.google.guava:guava:23.0')
+
+    compile('javax.servlet:javax.servlet-api:3.1.0')
+
+    compileOnly('org.projectlombok:lombok')
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.batch:spring-batch-test')
+}

@@ -1,0 +1,162 @@
+.table-product-description-container {
+  width: auto;
+}
+
+.table-history-bidding-state-container {
+  color: #ff001f;
+}
+
+.table-history-selling-state-container {
+  color: #2c8d5e;
+}
+
+.table-deadline-container {
+  color: #ff001f;
+}
+
+.table-price-root-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.table-price-func-container {
+  flex: 1;
+}
+
+.table-price-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.table-current-bid-container {
+  color: #2c8d5e;
+}
+
+.tab-content-base {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-shadow-container {
+  box-shadow: 0 6px 6px -6px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-container {
+  height: 124px;
+  border-radius: 8px;
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  background-image: linear-gradient(to bottom, #eeeeee, #d8d8d8);
+}
+
+.modal-thumbnail-container {
+  @extend .thumbnail-container;
+  margin: 0px;
+  height: 200px;
+}
+
+.modal-vertical-empty-seperator {
+  width: 80px;
+}
+
+.modal-horizontal-empty-seperator {
+  height: 48px;
+}
+
+.horizontal-flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-box-container {
+  display: flex;
+  flex-direction: column;
+  width: 704px;
+  height: 260px;
+  border: solid 1px #979797;
+  margin: 96px;
+}
+
+.login-box-message-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box-btn-container {
+  @extend .horizontal-flex-container;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-base {
+  width: 114px;
+  height: 48px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #172335;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 1);
+  }
+
+  &:active {
+    -webkit-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 1);
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 1);
+  }
+}
+
+.login-box-btn {
+  @extend .button-base;
+  width: 224px;
+  height: 56px;
+  margin-bottom: 56px;
+}
+
+.selling-button {
+  @extend .button-base;
+  background-color: #c1c7c9;
+}
+
+.claim-button {
+  @extend .button-base;
+  background-color: #2c8d5e;
+}
+
+.reg-auction-button {
+  @extend .button-base;
+  height: 24px;
+  background-color: #ff6d63;
+}
+
+.cancel-button {
+  @extend .button-base;
+  background-color: #dd1919;
+}
+
+.datalization-button {
+  @extend .button-base;
+  height: 24px;
+  background-color: #35778d;
+}
+
+.nft-inputnumber {
+  width: 90% !important;
+}

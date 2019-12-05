@@ -1,0 +1,595 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Thu Mar 28 01:16:53 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "backtogame",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "sym",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "type": "id_type"
+                }
+            ]
+        },
+        {
+            "name": "bid",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "cancelauc",
+            "base": "",
+            "fields": [
+                {
+                    "name": "seller",
+                    "type": "name"
+                },
+                {
+                    "name": "trade_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "changestate",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "sym",
+                    "type": "string"
+                },
+                {
+                    "name": "id",
+                    "type": "id_type"
+                }
+            ]
+        },
+        {
+            "name": "claim",
+            "base": "",
+            "fields": [
+                {
+                    "name": "actor",
+                    "type": "string"
+                },
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "trade_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "clean",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "issuer",
+                    "type": "name"
+                },
+                {
+                    "name": "sym",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "issue",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "index",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "notify",
+            "base": "",
+            "fields": [
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "msg",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "regauction",
+            "base": "",
+            "fields": [
+                {
+                    "name": "seller",
+                    "type": "name"
+                },
+                {
+                    "name": "token_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "min_price",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_price",
+                    "type": "asset"
+                },
+                {
+                    "name": "sym",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "removetrade",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "stats",
+            "base": "",
+            "fields": [
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "status_info",
+            "base": "",
+            "fields": [
+                {
+                    "name": "basic_str",
+                    "type": "uint32"
+                },
+                {
+                    "name": "basic_dex",
+                    "type": "uint32"
+                },
+                {
+                    "name": "basic_int",
+                    "type": "uint32"
+                },
+                {
+                    "name": "plus_str",
+                    "type": "uint32"
+                },
+                {
+                    "name": "plus_dex",
+                    "type": "uint32"
+                },
+                {
+                    "name": "plus_int",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "titem",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint64"
+                },
+                {
+                    "name": "id",
+                    "type": "uint32"
+                },
+                {
+                    "name": "type",
+                    "type": "uint32"
+                },
+                {
+                    "name": "tier",
+                    "type": "uint32"
+                },
+                {
+                    "name": "job",
+                    "type": "uint32"
+                },
+                {
+                    "name": "grade",
+                    "type": "uint32"
+                },
+                {
+                    "name": "main_status",
+                    "type": "uint32"
+                }
+            ]
+        },
+        {
+            "name": "tmonster",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint64"
+                },
+                {
+                    "name": "id",
+                    "type": "uint32"
+                },
+                {
+                    "name": "grade",
+                    "type": "uint32"
+                },
+                {
+                    "name": "status",
+                    "type": "status_info"
+                }
+            ]
+        },
+        {
+            "name": "trade",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "game_table_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "token_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "master",
+                    "type": "name"
+                },
+                {
+                    "name": "min_price",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_price",
+                    "type": "asset"
+                },
+                {
+                    "name": "current_price",
+                    "type": "asset"
+                },
+                {
+                    "name": "end_bid_time",
+                    "type": "uint64"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "nft_type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "created",
+                    "type": "uint64"
+                },
+                {
+                    "name": "updated",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "transferid",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "id",
+                    "type": "id_type"
+                },
+                {
+                    "name": "sym",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "tservant",
+            "base": "",
+            "fields": [
+                {
+                    "name": "index",
+                    "type": "uint64"
+                },
+                {
+                    "name": "id",
+                    "type": "uint32"
+                },
+                {
+                    "name": "status",
+                    "type": "status_info"
+                }
+            ]
+        },
+        {
+            "name": "utitoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "idx",
+                    "type": "id_type"
+                },
+                {
+                    "name": "t_idx",
+                    "type": "uint32"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "master",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "utmtoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "idx",
+                    "type": "id_type"
+                },
+                {
+                    "name": "t_idx",
+                    "type": "uint32"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "master",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "utstoken",
+            "base": "",
+            "fields": [
+                {
+                    "name": "idx",
+                    "type": "id_type"
+                },
+                {
+                    "name": "t_idx",
+                    "type": "uint32"
+                },
+                {
+                    "name": "state",
+                    "type": "string"
+                },
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "master",
+                    "type": "name"
+                },
+                {
+                    "name": "value",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "types": [
+        {
+            "new_type_name": "id_type",
+            "type": "uint64"
+        }
+    ],
+    "actions": [
+        {
+            "name": "backtogame",
+            "type": "backtogame",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "bid",
+            "type": "bid",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "cancelauc",
+            "type": "cancelauc",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "changestate",
+            "type": "changestate",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "claim",
+            "type": "claim",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "clean",
+            "type": "clean",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issue",
+            "type": "issue",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "notify",
+            "type": "notify",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "regauction",
+            "type": "regauction",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "removetrade",
+            "type": "removetrade",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transferid",
+            "type": "transferid",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "preitem",
+            "type": "titem",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "premonster",
+            "type": "tmonster",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "preservant",
+            "type": "tservant",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stat",
+            "type": "stats",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "trades",
+            "type": "trade",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "utitokens",
+            "type": "utitoken",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "utmtokens",
+            "type": "utmtoken",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "utstokens",
+            "type": "utstoken",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}

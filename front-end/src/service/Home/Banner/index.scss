@@ -1,0 +1,101 @@
+.news-summary-container {
+  display: flex;
+  flex: 0 0 48px;
+  height: 48px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: rgba(23, 35, 53, 0.7);
+}
+
+.news-main-message {
+  width: 671px;
+  height: 62px;
+  font-family: Helvetica;
+  font-size: 46px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+  z-index: 999;
+}
+
+.banner-image-first {
+  background-image: url('/img/banner/banner1.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-text {
+  // text-align: center;
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  color: white;
+}
+
+.ant-carousel {
+  .slick-slide {
+    text-align: center;
+    height: 450px;
+    line-height: 300px;
+    background: white;
+    overflow: hidden;
+  }
+  ul.slick-dots {
+    bottom: 12px;
+    height: 12px;
+
+    li {
+      background: #c1c7c9;
+      width: 12px;
+      height: 12px;
+      border-radius: 6px;
+      margin: 0px 6px;
+
+      button {
+        display: block;
+        background: #c1c7c9 !important;
+        width: 12px !important;
+        height: 12px;
+        border-radius: 6px;
+      }
+    }
+
+    li.slick-active {
+      width: 42px !important;
+
+      button {
+        display: block;
+        background: #172335 !important;
+        width: 42px !important;
+        height: 12px;
+        border-radius: 6px;
+      }
+
+      // button {
+      //   border: 0;
+      //   cursor: pointer;
+      //   background: #172335;
+      //   opacity: 0.3;
+      //   display: block;
+      //   width: 42px;
+      //   height: 12px;
+      //   border-radius: 6px;
+      //   outline: none;
+      //   font-size: 0;
+      //   color: transparent;
+      //   -webkit-transition: all 0.5s;
+      //   transition: all 0.5s;
+      //   padding: 0;
+      // }
+    }
+  }
+}
