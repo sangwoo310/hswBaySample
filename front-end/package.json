@@ -52,7 +52,7 @@
     "query-string": "^6.4.0",
     "react": "^16.8.1",
     "react-app-polyfill": "^0.2.1",
-    "react-dev-utils": "^7.0.3",
+    "react-dev-utils": "^11.0.4",
     "react-dom": "^16.8.1",
     "react-intl": "^2.8.0",
     "react-intl-locale": "^0.5.3",
